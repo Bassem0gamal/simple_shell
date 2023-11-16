@@ -30,6 +30,7 @@
 
 #define USE_GETLINE 0
 #define USE_STRTOK 0
+#define HIST_FILE	".simple_shell_history"
 
 #define HIST_MAX	4096
 
@@ -184,7 +185,7 @@ int populate_env_list(info_t *);
 /* environ2.c */
 char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
-int _setenv(info_t *, char *, char);
+int _setenv(info_t *, char *, char*);
 
 /* io_file_functions.c */
 char *get_history_file(info_t *info);
