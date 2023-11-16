@@ -175,7 +175,7 @@ ssize_t get_node_index(list_t *, list_t *);
 /* info.c */
 void clear_info(info_t *)
 void set_info(info_t *, char **);
-void free_info(info_t *, int );
+void free_info(info_t *, int);
 
 /* environ.c */
 int _myenv(info_t *);
@@ -187,7 +187,7 @@ int populate_env_list(info_t *);
 /* environ2.c */
 char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
-int _setenv(info_t *, char *, char );
+int _setenv(info_t *, char *, char);
 
 /* io_file_functions.c */
 char *get_history_file(info_t *info);
