@@ -156,7 +156,7 @@ int _putfd(char c, int fd);
 int _putsfd(char *str, int fd);
 
 /* lists.c */
-unsigned int _strlen(char *)
+unsigned int _strlen(char *);
 list_t *add_node(list_t **, const char *);
 list_t *add_node_end(list_t **, const char *);
 int delete_nodeint_at_index(listint_t **, unsigned int);
@@ -173,7 +173,7 @@ list_t *node_starts_with(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 
 /* info.c */
-void clear_info(info_t *)
+void clear_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
@@ -224,10 +224,10 @@ int replace_vars(info_t *);
 int replace_string(char **, char *);
 
 /* shell_loop.c */
-int hsh(info_t *, char **)
-int find_builtin(info_t *)
-void find_cmd(info_t *)
-void fork_cmd(info_t *)
+int hsh(info_t *, char **);
+int find_builtin(info_t *);
+void find_cmd(info_t *);
+void fork_cmd(info_t *);
 
 int loophsh(char **);
 
